@@ -16,6 +16,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer>
     </script>
+    <script src="js/joke.js" defer></script>
   <!-- eigen geschreven css voor jouw html-bestand -->
   <link rel="stylesheet" href="css/style.css">
 
@@ -23,30 +24,34 @@
 
 <body>
 
-<!-- https://getbootstrap.com/docs/5.3/components/navbar/ -->
     <nav id="hoofdnavigatie" class="navbar navbar-expand-lg bg-body-tertiary">
          <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="assets/logoLHL.png" alt="LHL web" width="100" height="100"></a>
+        <a class="navbar-brand" href="#"><img src="assets/images/logoLHL.png" alt="LHL web" width="100" height="100"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             
-          <!-- ms-auto brengt text naar rechts-->
+          
             <div class="navbar-nav ms-auto">
 
                 <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link active" aria-current="page" href="projecten.html">Overzicht</a>
                 <div class="dropdown">
                     <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                         projecten
                     </button>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="project-iot.html">project iot</a></li>
+                        <li><a class="dropdown-item" href="project-Topdesign.html">project TopDesign</a></li>
+                        <li><a class="dropdown-item" href="">project 3</a></li>
+                        <li><a class="dropdown-item" href="">project 4</a></li>
+                        <li><a class="dropdown-item" href="">project 5</a></li>
+                        <li><a class="dropdown-item" href="">project 6</a></li>
                         
                     </ul>
                 </div>
-                
-                <a class="nav-link" href="contact.html">contact</a>
+                 <a class="nav-link" href="contact.html">Contact</a>
                
             </div>
             
@@ -54,22 +59,22 @@
      </div>
     </nav>
  
-  <header class=" py-5 mb-5">
+<header class=" py-5 mb-5">
     <div class="container">
         <h1 class="display-4 text-center">Mijn werk</h1>
-        <p class="lead text-center text-muted">Overzicht van mijn technische projecten en labos</p>
+        <p class="lead text-center">Overzicht van mijn technische projecten en labos</p>
     </div>
-   </header>
+</header>
 
 <div class="container my-5">
   <div class="row"> 
       
-      <main class="col-lg-9">
+    <main class="col-lg-9">
 
           <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
               <div class="col">
                   <div class="card">
-                      <figure><img src="assets/IMG_0702.jpg" class="card-img-top" alt="Project 1"></figure>
+                      <figure><img src="assets/images/IMG_0702.jpg" class="card-img-top" alt="Project 1"></figure>
                       <div class="card-body">
                           <h5 class="card-title">Solderen & Breadboard</h5>
                           <a href="project-iot.html" class="btn btn-primary stretched-link">Bekijk Project</a>
@@ -78,16 +83,16 @@
               </div>
               <div class="col">
                   <div class="card">
-                      <figure><img src="assets/pexels-joshsorenson-1054397.jpg" class="card-img-top" alt="Project 2"></figure>
+                      <figure><img src="assets/images/Afbeeldinglogboek.png" class="card-img-top" alt="Project 2"></figure>
                       <div class="card-body">
-                          <h5 class="card-title">Netwerk Config</h5>
-                          <a href="#" class="btn btn-primary stretched-link">Bekijk Project</a>
+                          <h5 class="card-title"> TopDesign</h5>
+                          <a href="project-Topdesign.html" class="btn btn-primary stretched-link">Bekijk Project</a>
                       </div>
                   </div>
               </div>
               <div class="col">
                   <div class="card">
-                      <img src="assets/pexels-thisisengineering-3861976.jpg" class="card-img-top" alt="Project 3">
+                      <img src="assets/images/pexels-thisisengineering-3861976.jpg" class="card-img-top" alt="Project 3">
                       <div class="card-body">
                           <h5 class="card-title">Linux Scripting</h5>
                           <a href="#" class="btn btn-primary stretched-link">Bekijk Project</a>
@@ -98,7 +103,7 @@
           <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-4">
               <div class="col">
                   <div class="card">
-                      <img src="assets/pexels-athena-2582937.jpg" class="card-img-top" alt="Project 4">
+                      <img src="assets/images/pexels-athena-2582937.jpg" class="card-img-top" alt="Project 4">
                       <div class="card-body">
                           <h5 class="card-title">Hardware Assembly</h5>
                           <a href="#" class="btn btn-primary stretched-link">Bekijk Project</a>
@@ -107,7 +112,7 @@
               </div>
               <div class="col">
                   <div class="card">
-                      <img src="assets/pexels-cottonbro-5474282.jpg" class="card-img-top" alt="Project 5">
+                      <img src="assets/images/pexels-cottonbro-5474282.jpg" class="card-img-top" alt="Project 5">
                       <div class="card-body">
                           <h5 class="card-title">Security Audit</h5>
                           <a href="#" class="btn btn-primary stretched-link">Bekijk Project</a>
@@ -116,7 +121,7 @@
               </div>
               <div class="col">
                   <div class="card">
-                      <img src="assets/pexels-brett-sayles-5203849.jpg" class="card-img-top" alt="Project 6">
+                      <img src="assets/images/pexels-brett-sayles-5203849.jpg" class="card-img-top" alt="Project 6">
                       <div class="card-body">
                           <h5 class="card-title">Active Directory</h5>
                           <a href="#" class="btn btn-primary stretched-link">Bekijk Project</a>
@@ -124,25 +129,72 @@
                   </div>
               </div>
           </div> 
-          </main> 
-      <aside class="col-lg-3 border-start ps-5 mt-5 mt-lg-0">
-          <h2 class="text-uppercase fs-5 fw-bolder pt-3">contact</h2>
-          <p><br>
+    </main> 
+
+    <aside class="col-lg-3 border-start ps-5 mt-5 mt-lg-0">
+
+        
+            
+        <div class="p-4 mb-3 border">
+            <h5 class="fw-bold">OVER MIJ</h5>
+            <p class="mb-0">Ik ben Nassim, student System & Network Engineering. Op deze site vind je mijn projecten rondom netwerken, IoT en scripting.</p>
+        </div>
+
+        <div class="d-grid">
+            <a href="assets/images/Nassim_El_Hilali_-_IT_Student (1).pdf" class="btn btn-primary text-white">Download CV</a>
+        </div>
+
+        <br>
+        
+        <div class="mb-4">
+            <h5 class="fw-bold text-uppercase">Mijn GitHub</h5>
+            <a href="https://github.com/Nassimlhl" target="_blank">
+                <img src="https://github-readme-stats.vercel.app/api?username=Nassimlhl&show_icons=true&theme=transparent&hide_border=true&title_color=ffc107&text_color=000" 
+                    class="img-fluid" 
+                    alt="Github Stats">
+            </a>
+        </div>
+
+       
+
+        <h2 class="text-uppercase fs-5 fw-bolder pt-3">contact</h2>
+        <p><br>
               <a href="mailto:nassimelhilali99@gmail.com" class="text-decoration-none">nassimelhilali99@gmail.com</a><br> 
               +324 83 74 69 25
-          </p>
-          <ul class="list-inline socials">
-              <li class="list-inline-item">
+        </p>
+        <ul class="list-inline socials">
+             <li class="list-inline-item">
                   <a href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram blauwgrijs fs-6"></i></a>
-              </li>
-              <li class="list-inline-item">
+            </li>
+            <li class="list-inline-item">
                   <a href="mailto:nassimelhilali99@gmail.com"><i class="bi bi-envelope-fill fs-6"></i></a>
-              </li>
-              <li class="list-inline-item">
+            </li>
+            <li class="list-inline-item">
                   <a href="https://www.linkedin.com" target="_blank"><i class="bi bi-linkedin blauwgrijs fs-6"></i></a>
-              </li>
-          </ul>
-      </aside>
+            </li>
+            <br>
+        </ul>
+
+        <div class="card border-danger mb-4">
+            <div class="card-header bg-danger text-white fw-bold d-flex justify-content-between align-items-center">
+                <span>Nieuws uit België</span>
+                <div id="news-spinner" class="spinner-border spinner-border-sm" role="status">
+                    <span class="visually-hidden">Laden...</span>
+                </div>
+            </div>
+            
+            <div class="card-body p-0" style="max-height: 400px; overflow-y: auto;">
+                <div id="news-container" class="list-group list-group-flush">
+                    </div>
+            </div>
+            <div class="card-footer text-muted small" style="font-size: 0.75rem;">
+                API: NewsData.io
+            </div>
+        </div>
+
+       
+
+    </aside>
 
     <div class="container">
      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
@@ -169,8 +221,10 @@
                 <li class="nav-item">
                     <a href="contact.html" class="nav-link px-2 text-body-secondary">Contact</a>
                 </li>
-            </ul>
-            
+        </ul>
+
+   
+                    
      </footer>
     </div>
 </body>
