@@ -85,7 +85,9 @@ a.btn:hover {
 }
 
 
-
+.img{
+    height: 100%;
+}
 
 footer li {
     color: #FF7F00; 
@@ -98,6 +100,10 @@ footer li:hover {
     text-decoration: underline; 
 }
 
-.card {
-    height: 100%; 
+
+
+
+.card-img-top {
+    height: 300px;       /* Pas dit aan naar gewenste hoogte */
+    width: 100%;         /* Zekerheid dat hij de breedte vult */
 }
